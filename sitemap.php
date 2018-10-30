@@ -6,7 +6,7 @@ $query = "SELECT page_url FROM page";
 
 $result = mysqli_query($connect, $query);
 
-$base_url = "http://localhost/tutorial/php-sitemap/";
+$base_url = "dimdimbot.github.io";
 
 header("Content-Type: application/xml; charset=utf-8");
 

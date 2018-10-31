@@ -22,7 +22,7 @@ li a {
        text-decoration: none;
        }
         
-li a:hover {
+li a:hover:not(.active) {
        background-color:blueviolet;
        }
 .active {
@@ -41,7 +41,7 @@ li a:hover {
     </ul>
     <br>
     <ul>
-        <li><a>Games:</a></li>
+        <li><a class="active">Games:</a></li>
         <li><a href="/games/2048/index.html">2048</a></li>
     </ul>
 

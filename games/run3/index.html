@@ -1,24 +1,46 @@
-<html>
-<body>
-<div class="main_screen">
-<div>
-<div class="content">
-<div class="content_left">
-<div>
-<div id="AX" class="AX">
-            <object data="./run3.swf" type="application/x-shockwave-flash">
+<html lang="en"><head>
+        
+        
+        
+        
+        
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+            }
+            object,embed{
+                width: 100vw;
+                height: 100vh
+            }
+        </style>
+    </head>
+    <body marginwidth="0" marginheight="0">
+        <div id="AX" class="AX">
+            <object data="//run3.co/uploads/games/flash/run-3/run-3.0.swf" type="application/x-shockwave-flash">
                 <param name="base" value="">
                 <param name="wmode" value="direct">
-                <param name="movie" value=".run3.swf">
+                <param name="movie" value="//run3.co/uploads/games/flash/run-3/run-3.0.swf">
                 <param name="menu" value="false">
                 <param name="allowNetworking" value="internal">
                 <param name="allowScriptAccess" value="never">
-                <embed src="./run3.swf" menu="false" allownetworking="internal" allowscriptaccess="never" type="application/x-shockwave-flash">
+                <embed src="//run3.co/uploads/games/flash/run-3/run-3.0.swf" menu="false" allownetworking="internal" allowscriptaccess="never" type="application/x-shockwave-flash">
             </object>
         </div>
-</div>
-</div>
-</div>
-</div>
-</div>
+        <script type="text/javascript">
+            function startGame() {
+                var isKizi = false;
+                if (isKizi)
+                    document.querySelector('#GameEmbedSWF').startGame();
+            }
+            function preload_complete() {
+                setTimeout(startGame, 1e3);
+            }
+        </script>
+
+    
+
 </body></html>
